@@ -1,0 +1,92 @@
+body, h1, h2, form, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gabarito', sans-serif; /* Ensure you have this font available */
+    background-color: #ffffff; /* Light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.outer-container {
+    background-color: #111; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 468px; /* Fixed width for the container */
+    max-width: 900px; /* Maximum width */
+}
+
+h1, h2 {
+    margin-bottom: 17px;
+    color: #e67e22; /* Orange color for headings */
+}
+
+form {
+    margin-bottom: 19px;
+    width: 100%; /* Full width for form */
+    max-width: 434px; /* Maximum width for form */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    max-width: 900px; /* Maximum width for labels */
+    color: #c0392b; /* Dark red for labels */
+}
+
+input[type="text"], input[type="number"] {
+    width: 400px; /* Fixed width of input boxes */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding is included in total width */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e67e22; /* Orange button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d35400; /* Darker orange on hover */
+}
+
+ul {
+    list-style-type: none; /* No bullet points for list items */
+    width: 100%; /* Full width for list */
+}
+
+ul li {
+    background-color: #fff; /* White background for list items */
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border for list items */
+    border-radius: 4px; /* Rounded corners for list items */
+    margin-bottom: 5px; /* Space between list items */
+    width: calc(100% - 20px); /* Full width minus padding/border */
+}
+
+ul li:last-child {
+    margin-bottom: 0; /* No margin on last item */
+}

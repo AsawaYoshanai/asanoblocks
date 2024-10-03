@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI Model Marketplace</h1>
+
+    <h2>List New AI Model</h2>
+    <input type="text" id="modelName" placeholder="Model Name" />
+    <input type="text" id="modelDescription" placeholder="Model Description" />
+    <input type="number" id="modelPrice" placeholder="Price in ETH" />
+    <button onclick="listModel()">List Model</button>
+
+    <h2>Available Models</h2>
+    <div id="modelsList"></div>
+
+    <h2>Purchase AI Model</h2>
+    <input type="number" id="purchaseModelId" placeholder="Model ID" />
+    <button onclick="purchaseModel()">Purchase</button>
+
+    <h2>Rate AI Model</h2>
+    <input type="number" id="rateModelId" placeholder="Model ID" />
+    <input type="number" id="rating" placeholder="Rating (1-5)" />
+    <button onclick="rateModel()">Rate Model</button>
+
+    <h2>Withdraw Funds</h2>
+    <button onclick="withdrawFunds()">Withdraw</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
